@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Finish";
+}
+
+<h2>Finish</h2>
+
+@using (Html.BeginForm("Addition", "Addition", FormMethod.Post))
+{
+    <input id="Text1" type="text" value=@ViewBag.a name="firstNum" />
+    <input id="Text2" type="text" value=@ViewBag.b name="secondNum" />
+    <input id="Text3" type="text" value=@ViewBag.result />
+
+    <input type="submit" value="Submit" />
+}
